@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function nvme1n1_exists(){
+function check_nvme1n1_exists(){
 
 echo "1. nvme1n1 exists ?"
 if [ `lsblk | egrep "^nvme1n1" | wc -l` -ne 0 ]; then
@@ -14,7 +14,7 @@ fi
 
 }
 
-function no_file-system(){
+function check_no_file-system(){
 
 echo "2. no file-system ?"
 if [ "`file -s /dev/nvme1n1`" = "/dev/nvme1n1: data"  ] ; then
@@ -74,7 +74,7 @@ fi
 
 }
 
-function result_mount(){
+function check_result(){
 echo "Result"
 echo "[lsblk | grep disk]"
 lsblk | grep disk
@@ -85,9 +85,9 @@ df -h
 
 }
 
-nvme1n1_exists
-no_file-system
+check_nvme1n1_exists
+check_no_file-system
 create_file-system
 mount_nvme1n1
 add_mount-info
-result_mount
+check_result
