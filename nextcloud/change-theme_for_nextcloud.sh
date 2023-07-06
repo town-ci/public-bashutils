@@ -18,6 +18,7 @@ sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config name "クロジカ大容量
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config url "https://kurojica.com/storage/"
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config color "#000000"
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config disable-user-theming yes
+sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config background backgroundColor
 
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config logo ${MOUNTDATA_DIR}/kurojica/images/kurojica-logo.svg
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config logoheader ${MOUNTDATA_DIR}/kurojica/images/kurojica-logo.svg
