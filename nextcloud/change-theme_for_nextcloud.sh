@@ -14,7 +14,7 @@ sudo -u www-data mkdir -p ${MOUNTDATA_DIR}/kurojica/images/
 sudo -u www-data cp ${SCRIPT_PATH}/images/kurojica-favicon.ico ${MOUNTDATA_DIR}/kurojica/images/
 sudo -u www-data cp ${SCRIPT_PATH}/images/kurojica-logo.svg ${MOUNTDATA_DIR}/kurojica/images/
 
-sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config name "クロジカ大容量ファイル管理"
+sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config name "クロジカ"
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config url "https://kurojica.com/storage/"
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config color "#000000"
 sudo -u www-data ${DOCUMENT_ROOT}/occ theming:config disable-user-theming yes
