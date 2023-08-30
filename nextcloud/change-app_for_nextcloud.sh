@@ -6,7 +6,6 @@ cd /var/www/html
 sudo -u www-data ./occ app:disable calendar # Calendar
 sudo -u www-data ./occ app:disable circles # Circle
 sudo -u www-data ./occ app:disable notify_push # Client Push
-sudo -u www-data ./occ app:disable comments # Comments
 sudo -u www-data ./occ app:disable contacts # Contacts
 sudo -u www-data ./occ app:disable contactsinteraction # Contacts Interaction
 sudo -u www-data ./occ app:disable dashboard # Dashboard
